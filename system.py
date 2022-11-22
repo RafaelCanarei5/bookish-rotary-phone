@@ -1,17 +1,18 @@
 import time
-from PySimpleGUI import PySimpleGUI as SG # Did you wanna graphics or not?! So, use this!
+from PySimpleGUI import PySimpleGUI as sg # Did you wanna graphics or not?! So, use this!
 
-font = ("Candara", 12)
+font = ("Candara", 18)
 
-SG.theme("DarkTeal7") # The theme incorporates the system style.
+sg.theme("DarkTeal7") # The theme incorporates the system style.
 layout = [
-  [SG.Text(time.ctime, font = font)],
-  [SG.Button("📧", border_width = 0)]
+  [sg.Text(time.ctime, font = font)],
+  [sg.Button("📧", border_width = 0, font = font)],
+  [sg.Button("📔", border_width = 0, font = font
 ]
 
-PyWindow = SG.Window("PalmOS", layout)
+PyWindow = sg.Window("PalmOS", layout)
 
 while True:
   events, values = PyWindow.Read()
-  if events == SG.WIN_CLOSED:
+  if events == sg.WIN_CLOSED:
     break
