@@ -5,9 +5,9 @@ font = ("Candara", 18)
 
 sg.theme("DarkTeal7") # The theme incorporates the system style.
 layout = [
-  [sg.Text(time.ctime, font = font)],
+  [sg.Text("11:38", font = font)],
   [sg.Button("📧", border_width = 0, font = font)],
-  [sg.Button("📔", border_width = 0, font = font
+  [sg.Button("📔", border_width = 0, font = font)]
 ]
 
 PyWindow = sg.Window("PalmOS", layout)
