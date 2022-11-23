@@ -1,7 +1,7 @@
 import time
 from PySimpleGUI import PySimpleGUI as sg # Did you wanna graphics or not?! So, use this!
 
-font = ("Candara", 18)
+font = ("Segoe UI", 18)
 
 sg.theme("DarkTeal7") # The theme incorporates the system style.
 layout = [
